@@ -13,9 +13,12 @@ public interface Idao {
     void UpdateMember(TestMyBatis testMyBatis);
 
     List<TestMyBatis> selectAllMember();
+    //这个方法在xml文件里面没有对应的id，无法构成映射，所以用不了
     Map<String,Object> selectAllMemberMap();
 
     TestMyBatis selectMemberByid(int id);
     List<TestMyBatis> selectMemberBySec(String sec);
+    List<TestMyBatis> selectMemberBySex(String sex);
+    List<TestMyBatis> selectMemberByDate(String TimeDate);
 
 }

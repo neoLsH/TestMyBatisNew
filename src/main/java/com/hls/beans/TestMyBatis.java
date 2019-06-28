@@ -1,6 +1,7 @@
 package com.hls.beans;
 
 
+import java.lang.String;
 
 public class TestMyBatis {
     private Integer id;
@@ -8,6 +9,7 @@ public class TestMyBatis {
     private String name;
     private String sex;
     private String TimeDate;
+
 
     public void GetALL(){
         System.out.print(this.id+"\t\t\t\t\t");
@@ -34,6 +36,7 @@ public class TestMyBatis {
     public void setId(Integer id) {
         this.id = id;
     }
+
     public String getSec() {
         return sec;
     }

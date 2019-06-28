@@ -42,5 +42,15 @@
         select id,name,sec,sex,TimeDate from info where sec like concat('%',#{sec},'%')
     </select>
 
+    <select id="selectMemberBySex" resultType="TestMyBatis">
+        select id,name,sec,sex,TimeDate from info where sex like concat('%',#{sex},'%')
+    </select>
+
+    <select id="selectMemberByDate" resultType="TestMyBatis">
+        select id,name,sec,sex,TimeDate from info where TimeDate like concat('%',#{TimaDate},'%')
+    </select>
+
+
+
 
 </mapper>

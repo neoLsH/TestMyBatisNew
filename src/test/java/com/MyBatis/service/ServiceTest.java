@@ -1,10 +1,6 @@
 package com.MyBatis.service;
-
-
 import com.hls.beans.TestMyBatis;
-
 //import com.hls.dao.DaoImpl;
-
 import com.hls.dao.Idao;
 import com.hls.utils.MyBatisUtils;
 import org.apache.ibatis.session.SqlSession;
@@ -27,6 +23,7 @@ public class ServiceTest {
         idao = sqlSession.getMapper(Idao.class);
     }
 
+
     @After
     public void after(){
         if (sqlSession!=null){
@@ -37,6 +34,7 @@ public class ServiceTest {
             }
         }
     }
+
 
     /*插入1.0*/
     @Test
@@ -104,6 +102,23 @@ public class ServiceTest {
     public void test08(){
         List<TestMyBatis> list = idao.selectMemberBySec("23");
         for (TestMyBatis temp : list) {
+            temp.GetALL();
+        }
+    }
+
+    @Test
+    public void test09(){
+        List<TestMyBatis> list = idao.selectMemberBySex("男");
+        for (TestMyBatis temp:list){
+            temp.GetALL();
+        }
+    }
+
+    @Test
+    public void test10(){
+        List<TestMyBatis> list = idao.selectMemberByDate("21");
+        for (TestMyBatis temp :
+                list) {
             temp.GetALL();
         }
     }
