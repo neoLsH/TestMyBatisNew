@@ -486,7 +486,7 @@
       <workItem from="1561199789807" duration="851000" />
       <workItem from="1561249295219" duration="4595000" />
       <workItem from="1561725834696" duration="7259000" />
-      <workItem from="1561737225655" duration="232000" />
+      <workItem from="1561737225655" duration="1025000" />
     </task>
     <task id="LOCAL-00001" summary="Ubuntu_git">
       <created>1561173330272</created>
@@ -516,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561734705166</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ubuntu_git_SSMTest">
+      <created>1561737619188</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1561737619188</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -552,7 +559,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74414000" />
+    <option name="totallyTimeSpent" value="75058000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
