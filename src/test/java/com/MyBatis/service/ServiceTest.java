@@ -1,7 +1,10 @@
 package com.MyBatis.service;
 
+
 import com.hls.beans.TestMyBatis;
+
 //import com.hls.dao.DaoImpl;
+
 import com.hls.dao.Idao;
 import com.hls.utils.MyBatisUtils;
 import org.apache.ibatis.session.SqlSession;
@@ -24,7 +27,6 @@ public class ServiceTest {
         idao = sqlSession.getMapper(Idao.class);
     }
 
-
     @After
     public void after(){
         if (sqlSession!=null){
@@ -35,7 +37,6 @@ public class ServiceTest {
             }
         }
     }
-
 
     /*插入1.0*/
     @Test
