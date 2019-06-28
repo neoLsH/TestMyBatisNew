@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Test">
+    <insert id="insertmember">
+        insert into info4 (name, sec, sex, TimeDate) values (#{name},#{sec},#{sex},#{TimeDate})
+    </insert>
+
+    <insert id="InsertMemberCache" >
+        insert into info4 (name, sec, sex, TimeDate) values (#{name},#{sec},#{sex},#{TimeDate})
+        /*有关order：
+            After（生成id在insert后面）  Mysql   是先执行INSERT    然后再生成Id
+            Before Oracle  是先生成Id 再执行INSERT
+            现在不写也行，默认根据用的数据库选择
+        */
+        <selectKey resultType="int" keyProperty="id" order="AFTER">
+            select @@identity ;
+        </selectKey>
+    </insert>
+
+    <delete id="DeleteMemberByid">
+        delete from info4 where id=#{xxx}
+    </delete>
+
+    <update id="UpdateMember">
+        update info4 set name=#{name},sec=#{sec} ,sex=#{sex}, TimeDate=#{TimeDate} where id=#{id}
+    </update>
+
+    <select id="selectAllMember" resultType="TestMyBatis">
+        select id,name,sec,sex,TimeDate from info4
+    </select>
+</mapper>
