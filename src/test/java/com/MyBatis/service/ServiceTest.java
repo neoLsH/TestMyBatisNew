@@ -7,9 +7,11 @@ import org.apache.ibatis.session.SqlSession;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import java.util.Date;
-import java.util.List;
 
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 
 public class ServiceTest {
@@ -123,5 +125,59 @@ public class ServiceTest {
         }
     }
 
+    @Test
+    public void test11(){
+        List<TestMyBatis> list = idao.selectMemberByNameAndSec("1","123");
+        for (TestMyBatis temp : list){
+            temp.GetALL();
+        }
+    }
+
+    @Test
+    /*三个查询线索*/
+    public void test12(){
+        Map<String,Object> map = new HashMap();
+        map.put("name1","黄");
+        map.put("sec1","huang");
+        TestMyBatis testMyBatis = new TestMyBatis("黄","huangleshu","女","Jun");
+        map.put("testMyBatis",testMyBatis);
+        List<TestMyBatis> list = idao.selectMemberByNameAndSecMap(map);
+        for (TestMyBatis temp : list){
+            temp.GetALL();
+        }
+    }
+
+    @Test
+    public void test013(){
+        Map<String,Object> map = new HashMap<>();
+        map.put("name2","黄乐");
+        TestMyBatis testMyBatis = new TestMyBatis("黄","huang","男","12");
+        map.put("testMyBatis",testMyBatis);
+        List<TestMyBatis> list = idao.selectMemberByNameAndSex(map);
+        for (TestMyBatis temp :
+                list) {
+            temp.GetALL();
+        }
+    }
+
+    @Test
+    public void test014(){
+        Map<String,Object> map = new HashMap<>();
+        map.put("name3","黄");
+        TestMyBatis testMyBatis = new TestMyBatis("黄乐枢","huangl","男","kk");
+        map.put("testMyBatis",testMyBatis);
+        List<TestMyBatis> list = idao.selectMemberByNameAndTimeDate(map);
+        for (TestMyBatis temp:list){
+            temp.GetALL();
+        }
+    }
+
+    @Test
+    public void test015(){
+        Map<String,Object> map = new HashMap<>();
+        map.put("name4","黄");
+        TestMyBatis testMyBatis = new TestMyBatis("黄乐枢","huang","男","12");
+
+    }
 }
 

@@ -49,8 +49,50 @@
     <select id="selectMemberByDate" resultType="TestMyBatis">
         select id,name,sec,sex,TimeDate from info where TimeDate like concat('%',#{TimaDate},'%')
     </select>
+    <!--resultMap-->
+
+    <select id="selectMemberByNameAndSec" resultType="TestMyBatis">
+        select id,name,sec,sex,TimeDate
+        from info
+        where name like '%' #{arg0} '%'
+        and sec like concat('%',#{arg1},'%')
+    </select>
 
 
+    <!--#{KeyName}   -->
+    <select id="selectMemberByNameAndSecMap" resultType="TestMyBatis">
+        select id,name,sec,sex,TimeDate
+        from info
+        where NAME like '%' #{name1} '%'
+        and sec like '%' #{sec1} '%'
+        and TimeDate like '%' #{testMyBatis.TimeDate} '%'
+    </select>
 
+    <!--动态sql-->
 
+    <select id="selectMemberByNameAndSex" resultType="TestMyBatis">
+        select *
+        from info
+        where name like '%' #{name2} '%'
+        and sex like '%' #{testMyBatis.sex} '%'
+    </select>
+
+    <select id="selectMemberByNameAndTimeDate" resultType="TestMyBatis">
+        select *
+        from info
+        where name like '%' #{name3} '%'
+        and TimeDate like concat('%',#{testMyBatis.TimeDate},'%')
+    </select>
+
+    <!--<select id="" resultType="TestMyBatis">
+        select * from info
+        <where>
+            <if test="">
+
+            </if>
+            <if test="">
+
+            </if>
+        </where>
+    </select>-->
 </mapper>
