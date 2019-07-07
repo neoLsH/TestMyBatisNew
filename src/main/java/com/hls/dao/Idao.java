@@ -25,4 +25,8 @@ public interface Idao {
     List<TestMyBatis> selectMemberByNameAndSecMap(Map map);
     List<TestMyBatis> selectMemberByNameAndSex(Map map);
     List<TestMyBatis> selectMemberByNameAndTimeDate(Map map);
+    List<TestMyBatis> selectMemberByNameSecSexAndTimeDate(Map map); //String name,String sec,String sex,String TimeDate
+
+    List<TestMyBatis> selectMemberByNameAndSecIf(String name,String sec);
+
 }

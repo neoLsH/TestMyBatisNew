@@ -7,18 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d46a65f2-47a1-44a6-9f5d-886da9b721b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hls/beans/TestMyBatis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hls/beans/TestMyBatis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hls/dao/Idao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hls/dao/Idao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resource/mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/MyBatis/service/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyBatis/service/ServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hls/beans/TestMyBatis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hls/beans/TestMyBatis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hls/dao/Idao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hls/dao/Idao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/MyBatis/service/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/MyBatis/service/ServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,11 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/MyBatis/service/ServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2057">
-              <caret line="178" column="74" lean-forward="true" selection-start-line="178" selection-start-column="74" selection-end-line="178" selection-end-column="74" />
+            <state relative-caret-position="512">
+              <caret line="195" column="25" lean-forward="true" selection-start-line="195" selection-start-column="25" selection-end-line="195" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,18 +51,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resource/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-254">
-              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hls/beans/TestMyBatis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
+            <state relative-caret-position="680">
               <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
@@ -80,11 +62,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hls/dao/Idao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="459">
+              <caret line="27" column="57" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resource/mapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="537">
+              <caret line="92" column="45" lean-forward="true" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -135,11 +126,11 @@
         <option value="$PROJECT_DIR$/target/classes/mapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hls/dao/DaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hls/beans/TestMyBatis.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hls/dao/Idao.java" />
-        <option value="$PROJECT_DIR$/src/main/resource/mapper.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/MyBatis/service/ServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/resource/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hls/dao/Idao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/MyBatis/service/ServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resource/mapper.xml" />
       </list>
     </option>
   </component>
@@ -173,7 +164,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="505" />
     <option name="y" value="28" />
     <option name="width" value="960" />
     <option name="height" value="1052" />
@@ -545,7 +537,7 @@
       <workItem from="1561853313812" duration="4661000" />
       <workItem from="1561906547401" duration="586000" />
       <workItem from="1562213846740" duration="8205000" />
-      <workItem from="1562342458288" duration="896000" />
+      <workItem from="1562342458288" duration="2503000" />
     </task>
     <task id="LOCAL-00001" summary="Ubuntu_git">
       <created>1561173330272</created>
@@ -617,25 +609,17 @@
       <option name="project" value="LOCAL" />
       <updated>1562230963847</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ubuntu_git_SSMTest_0669UpDate1_0705">
+      <created>1562343429062</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1562343429062</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ServiceTest - 2019.07.04 at 12h 58m 06s.xml">
-      <configuration name="ServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest - 2019.07.04 at 13h 00m 16s.xml">
-      <configuration name="ServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest - 2019.07.04 at 13h 01m 04s.xml">
-      <configuration name="ServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest - 2019.07.04 at 13h 01m 50s.xml">
-      <configuration name="ServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest - 2019.07.04 at 13h 57m 51s.xml">
-      <configuration name="ServiceTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ServiceTest - 2019.07.04 at 14h 02m 39s.xml">
       <configuration name="ServiceTest" configurationId="JUnit" />
     </history-entry>
@@ -651,9 +635,24 @@
     <history-entry file="ServiceTest - 2019.07.06 at 00h 08m 30s.xml">
       <configuration name="ServiceTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ServiceTest - 2019.07.07 at 09h 45m 58s.xml">
+      <configuration name="ServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceTest - 2019.07.07 at 09h 48m 26s.xml">
+      <configuration name="ServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceTest - 2019.07.07 at 09h 49m 38s.xml">
+      <configuration name="ServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceTest - 2019.07.07 at 09h 51m 19s.xml">
+      <configuration name="ServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceTest - 2019.07.07 at 09h 51m 37s.xml">
+      <configuration name="ServiceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93092000" />
+    <option name="totallyTimeSpent" value="94699000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -666,8 +665,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19391026" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19391026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -677,8 +677,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.057651993" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49893162" visible="true" weight="0.17602591" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.15261044" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893162" weight="0.20842333" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.17062636" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
@@ -719,11 +719,10 @@
     <MESSAGE value="Ubuntu_git" />
     <MESSAGE value="Ubuntu_git_SSMTest" />
     <MESSAGE value="Ubuntu_git_SSMTest_0669UpDate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ubuntu_git_SSMTest_0669UpDate" />
+    <MESSAGE value="Ubuntu_git_SSMTest_0669UpDate1_0705" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ubuntu_git_SSMTest_0669UpDate1_0705" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/newIndex.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/com.hls.Mybatis/Test.java" />
     <entry file="jar://$PROJECT_DIR$/lib/mybatis-3.5.0.jar!/org/apache/ibatis/builder/xml/mybatis-3-config.dtd">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -829,13 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/mapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -874,10 +866,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hls/dao/Idao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resource/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        <state relative-caret-position="1190">
+          <caret line="70" column="331" lean-forward="true" selection-start-line="70" selection-start-column="331" selection-end-line="70" selection-end-column="331" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_211/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="103" column="11" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
+          <folding>
+            <element signature="e#3504#3505#0" expanded="true" />
+            <element signature="e#3562#3563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_211/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="745" column="60" selection-start-line="745" selection-start-column="60" selection-end-line="745" selection-end-column="60" />
+          <folding>
+            <element signature="e#32010#32011#0" expanded="true" />
+            <element signature="e#32095#32096#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/MyBatis/service/ServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="195" column="25" lean-forward="true" selection-start-line="195" selection-start-column="25" selection-end-line="195" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -886,25 +907,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hls/beans/TestMyBatis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
+        <state relative-caret-position="680">
           <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hls/dao/Idao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-254">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/MyBatis/service/ServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="178" column="74" lean-forward="true" selection-start-line="178" selection-start-column="74" selection-end-line="178" selection-end-column="74" />
+        <state relative-caret-position="459">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/mapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="92" column="45" lean-forward="true" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
         </state>
       </provider>
     </entry>

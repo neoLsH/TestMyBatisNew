@@ -8,6 +8,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -42,7 +43,14 @@ public class ServiceTest {
     @Test
     public void testInsert01(){
         String Time = new Date().toString();
-        TestMyBatis ts = new TestMyBatis("黄乐枢kk1"+Time,"huangleshu2","男",Time);
+        double random = Math.random()*100;
+        int num = (int) random;
+        String sex = "男";
+        if (num%2==0){
+            sex = "女";
+        }
+        System.out.println("*****************************\n"+num+"\n*************************************");
+        TestMyBatis ts = new TestMyBatis("黄乐枢kk1"+Time,"huangleshu2",sex,Time);
         idao.InsertMember(ts);
         sqlSession.commit();
 
@@ -51,7 +59,14 @@ public class ServiceTest {
     @Test
     public void testInsert02(){
         String Time = new Date().toString();
-        TestMyBatis ts = new TestMyBatis("黄乐枢kk1"+Time,"huangleshu2","男",Time);
+        double random = Math.random()*100;
+        int num = (int) random;
+        System.out.println("*****************************\n"+num+"\n*************************************");
+        String sex = "男";
+        if (num%2==0){
+            sex = "女";
+        }
+        TestMyBatis ts = new TestMyBatis("黄乐枢kk1"+Time,"huangleshu2",sex,Time);
         System.out.println(ts.getId());
         idao.InsertMemberCache(ts);
         System.out.println(ts.getId());
@@ -177,7 +192,13 @@ public class ServiceTest {
         Map<String,Object> map = new HashMap<>();
         map.put("name4","黄");
         TestMyBatis testMyBatis = new TestMyBatis("黄乐枢","huang","男","12");
-
+        map.put("name4","黄乐枢");
+        map.put("sex","女");
+        List<TestMyBatis> list = idao.selectMemberByNameSecSexAndTimeDate(map);
+        for (TestMyBatis temp :
+                list) {
+            temp.GetALL();
+        }
     }
 }
 

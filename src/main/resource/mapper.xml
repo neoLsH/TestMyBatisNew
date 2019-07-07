@@ -84,6 +84,14 @@
         and TimeDate like concat('%',#{testMyBatis.TimeDate},'%')
     </select>
 
+    <select id="selectMemberByNameSecSexAndTimeDate" resultType="TestMyBatis">
+        select *
+        from info
+        where name like '%' #{name} '%'
+        and sec like '%' #{sec} '%'
+        and sex like '%' #{sex} '%'
+        and TimeDate like '%' #{TimeDate} '%'
+    </select>
     <!--<select id="" resultType="TestMyBatis">
         select * from info
         <where>
