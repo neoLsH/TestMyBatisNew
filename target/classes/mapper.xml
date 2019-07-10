@@ -5,7 +5,6 @@
     <insert id="InsertMember">
         insert into info (name, sec, sex, TimeDate) values (#{name},#{sec},#{sex},#{TimeDate})
     </insert>
-
     <!--/*有关order：
             After（生成id在insert后面）  Mysql   是先执行INSERT    然后再生成Id
             Before Oracle  是先生成Id 再执行INSERT
@@ -84,15 +83,92 @@
         and TimeDate like concat('%',#{testMyBatis.TimeDate},'%')
     </select>
 
-    <!--<select id="" resultType="TestMyBatis">
-        select * from info
+    <resultMap id="test1" type="TestMyBatis">
+        <id column="name1" property="name"/>
+        <id column="sec1" property="sec"/>
+    </resultMap>
+
+    <!--用的时候直接用resultMap  id 就可以了-->
+    <select id="selectMemberByNameSecSexAndTimeDate" resultType="TestMyBatis">
+        select *
+        from info
+        where name like '%' #{name} '%'
+        and sec like '%' #{sec} '%'
+        and sex like '%' #{sex} '%'
+        and TimeDate like '%' #{TimeDate} '%'
+    </select>
+
+    <select id="selectMemberByNameAndSecIf" resultType="TestMyBatis">
+        select *
+        from info
+        where 1 = 1
+        <if test="name != null and name != '  '">
+            and name like '%' #{name} '%'
+        </if>
+        <if test="sec != null and sec != '  '">
+            and sec like '%' #{sec} '%'
+        </if>
+        <if test="sex != null and sex != '  '">
+            and sex like '%' #{sex} '%'
+        </if>
+    </select>
+<!--动态sql的时候一般加   and-->
+    <select id="selectMemberByNameAndSexWhere" resultType="TestMyBatis">
+        select *
+        from info
         <where>
-            <if test="">
-
+            <if test="name != null and name !='  '">
+                and name like '%' #{name} '%'
             </if>
-            <if test="">
-
+            <if test="sex != null and sex != '  '">
+                and sex like '%' #{sex} '%'
             </if>
         </where>
-    </select>-->
+    </select>
+
+    <select id="selectMemberByNameAndSecChoose" resultType="TestMyBatis">
+        select *
+        from info
+        <where>
+            <choose>
+                <when test="name != null and name!=''">
+                    and name like  '%' #{name} '%'
+                </when>
+                <when test="sex != null and sex !=''">
+                    and sex like '%' #{sex} '%'
+                </when>
+                <otherwise>
+                    1 = 2
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <!--
+         select *
+         from info
+         where id in (1,3,5)
+    -->
+
+    <select id="selectMemberByNameAndSexForeach" resultType="TestMyBatis">
+         select *
+         from info
+         <if test="array.length > 0">
+             where id in
+             <foreach collection="array" item="myId" open="(" close=")" separator=",">
+                #{myId}
+             </foreach>
+         </if>
+     </select>
+
+    <select id="selectMemberByNameAndSexForeach2" resultType="TestMyBatis">
+        select *
+        from info
+        <if test="list.size > 0">
+            where id in
+            <foreach collection="list" item="myId" open="(" close=")" separator=",">
+                #{myId}
+            </foreach>
+        </if>
+    </select>
 </mapper>

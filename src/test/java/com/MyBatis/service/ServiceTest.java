@@ -9,10 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 public class ServiceTest {
@@ -192,11 +189,63 @@ public class ServiceTest {
         Map<String,Object> map = new HashMap<>();
         map.put("name4","黄");
         TestMyBatis testMyBatis = new TestMyBatis("黄乐枢","huang","男","12");
-        map.put("name4","黄乐枢");
+        map.put("name","黄乐枢");
+        map.put("sec","huang");
         map.put("sex","女");
+        map.put("TimeDate","2");
+        map.put("testMyBatis",testMyBatis);
         List<TestMyBatis> list = idao.selectMemberByNameSecSexAndTimeDate(map);
         for (TestMyBatis temp :
                 list) {
+            temp.GetALL();
+        }
+    }
+
+    @Test
+    public void test16(){
+        TestMyBatis testMyBatis = new TestMyBatis("黄","huangle","女","Jun");
+        List<TestMyBatis> list =  idao.selectMemberByNameAndSecIf(testMyBatis);
+        for (TestMyBatis temp:list){
+            temp.GetALL();
+        }
+    }
+
+    @Test
+    public void test17(){
+        TestMyBatis testMyBatis = new TestMyBatis("黄","huang","女","Jul");
+        List<TestMyBatis> list = idao.selectMemberByNameAndSexWhere(testMyBatis);
+        for (TestMyBatis temp:list){
+            temp.GetALL();
+        }
+    }
+
+    @Test
+    public void test18(){
+        TestMyBatis testMyBatis = new TestMyBatis("","","女","Jul");
+        List<TestMyBatis> list = idao.selectMemberByNameAndSecChoose(testMyBatis);
+        for (TestMyBatis temp:list){
+            temp.GetALL();
+        }
+    }
+
+    @Test
+    public void test19(){
+        int[] id = {1,3,5,54,34,76,34,75};
+        List<TestMyBatis> list = idao.selectMemberByNameAndSexForeach(id);
+        for (TestMyBatis temp:list){
+            temp.GetALL();
+        }
+    }
+
+    @Test
+    public void test20(){
+        List<Integer> id = new ArrayList<>();
+        id.add(0,4);
+        id.add(1,1);
+        id.add(2,23);
+        id.add(3,3);
+        List<TestMyBatis> list = idao.selectMemberByNameAndSexForeach2(id);
+        for (TestMyBatis temp:list){
             temp.GetALL();
         }
     }

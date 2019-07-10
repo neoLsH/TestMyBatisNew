@@ -7,9 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d46a65f2-47a1-44a6-9f5d-886da9b721b6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hls/dao/Idao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hls/dao/Idao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resource/mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/MyBatis/service/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/MyBatis/service/ServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hls/beans/TestMyBatis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hls/beans/TestMyBatis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hls/dao/Idao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hls/dao/Idao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/MyBatis/service/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/MyBatis/service/ServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/MyBatis/service/ServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="195" column="25" lean-forward="true" selection-start-line="195" selection-start-column="25" selection-end-line="195" selection-end-column="25" />
+            <state relative-caret-position="823">
+              <caret line="248" column="9" selection-start-line="248" selection-start-column="9" selection-end-line="248" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hls/beans/TestMyBatis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="330">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -62,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hls/dao/Idao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="57" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="57" />
+            <state relative-caret-position="578">
+              <caret line="34" column="66" lean-forward="true" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resource/mapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="92" column="45" lean-forward="true" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
+            <state relative-caret-position="772">
+              <caret line="169" column="23" lean-forward="true" selection-start-line="169" selection-start-column="23" selection-end-line="169" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -125,9 +133,9 @@
         <option value="$PROJECT_DIR$/target/classes/log4j.properties" />
         <option value="$PROJECT_DIR$/target/classes/mapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hls/dao/DaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hls/beans/TestMyBatis.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resource/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hls/beans/TestMyBatis.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hls/dao/Idao.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/MyBatis/service/ServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/resource/mapper.xml" />
@@ -164,9 +172,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="505" />
-    <option name="y" value="28" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="890" />
+    <option name="y" value="264" />
     <option name="width" value="960" />
     <option name="height" value="1052" />
   </component>
@@ -176,6 +184,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -274,7 +283,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,18 +298,15 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="D:\JAVASSM-project\TestMyBatis\src\test\java" />
-      <recent name="D:\JAVASSM-project\TestMyBatis\target\classes" />
-      <recent name="E:\JAVASSM-project\TestMyBatis\src\main\java\com\hls\dao" />
-      <recent name="E:\JAVASSM-project\TestMyBatis\src\main\resource" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.hls.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/target/classes" />
@@ -310,8 +315,12 @@
       <recent name="D:\JAVASSM-project\TestMyBatis\src" />
       <recent name="D:\JAVASSM-project\TestMyBatis\.idea" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.hls.dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="D:\JAVASSM-project\TestMyBatis\src\test\java" />
+      <recent name="D:\JAVASSM-project\TestMyBatis\target\classes" />
+      <recent name="E:\JAVASSM-project\TestMyBatis\src\main\java\com\hls\dao" />
+      <recent name="E:\JAVASSM-project\TestMyBatis\src\main\resource" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -326,7 +335,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ServiceTest">
+  <component name="RunManager" selected="JUnit.ServiceTest.test20">
     <configuration name="ServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestMyBatis" />
       <extension name="coverage">
@@ -342,7 +351,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.test012" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceTest.test17" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestMyBatis" />
       <extension name="coverage">
         <pattern>
@@ -352,14 +361,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.MyBatis.service" />
       <option name="MAIN_CLASS_NAME" value="com.MyBatis.service.ServiceTest" />
-      <option name="METHOD_NAME" value="test012" />
+      <option name="METHOD_NAME" value="test17" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceTest.test18" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestMyBatis" />
       <extension name="coverage">
         <pattern>
@@ -369,13 +377,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.MyBatis.service" />
       <option name="MAIN_CLASS_NAME" value="com.MyBatis.service.ServiceTest" />
-      <option name="METHOD_NAME" value="test04" />
+      <option name="METHOD_NAME" value="test18" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceTest.test19" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestMyBatis" />
       <extension name="coverage">
         <pattern>
@@ -385,13 +393,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.MyBatis.service" />
       <option name="MAIN_CLASS_NAME" value="com.MyBatis.service.ServiceTest" />
-      <option name="METHOD_NAME" value="test11" />
+      <option name="METHOD_NAME" value="test19" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.test12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceTest.test20" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestMyBatis" />
       <extension name="coverage">
         <pattern>
@@ -401,24 +409,19 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.MyBatis.service" />
       <option name="MAIN_CLASS_NAME" value="com.MyBatis.service.ServiceTest" />
-      <option name="METHOD_NAME" value="test12" />
+      <option name="METHOD_NAME" value="test20" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.203" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.203" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER" value="false" />
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.42" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/" />
       <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="TestMyBatis:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/TestMyBatis_war" />
-          </settings>
-        </artifact>
-      </deployment>
+      <deployment />
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_TestMyBatis_2" />
+        <option name="BASE_DIRECTORY_NAME" value="_TestMyBatis" />
+        <option name="HTTP_PORT" value="80" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -426,7 +429,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="52013" />
+        <option name="DEBUG_PORT" value="36493" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -475,26 +478,22 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="TestMyBatis:war" />
-        </option>
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ServiceTest.test04" />
       <item itemvalue="JUnit.ServiceTest" />
-      <item itemvalue="JUnit.ServiceTest.test012" />
-      <item itemvalue="JUnit.ServiceTest.test11" />
-      <item itemvalue="JUnit.ServiceTest.test12" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.203" />
+      <item itemvalue="JUnit.ServiceTest.test17" />
+      <item itemvalue="JUnit.ServiceTest.test18" />
+      <item itemvalue="JUnit.ServiceTest.test19" />
+      <item itemvalue="JUnit.ServiceTest.test20" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ServiceTest.test20" />
+        <item itemvalue="JUnit.ServiceTest.test19" />
         <item itemvalue="JUnit.ServiceTest" />
-        <item itemvalue="JUnit.ServiceTest.test12" />
-        <item itemvalue="JUnit.ServiceTest.test11" />
-        <item itemvalue="JUnit.ServiceTest.test012" />
-        <item itemvalue="JUnit.ServiceTest.test04" />
+        <item itemvalue="JUnit.ServiceTest.test18" />
+        <item itemvalue="JUnit.ServiceTest.test17" />
       </list>
     </recent_temporary>
   </component>
@@ -537,7 +536,9 @@
       <workItem from="1561853313812" duration="4661000" />
       <workItem from="1561906547401" duration="586000" />
       <workItem from="1562213846740" duration="8205000" />
-      <workItem from="1562342458288" duration="2503000" />
+      <workItem from="1562342458288" duration="10742000" />
+      <workItem from="1562562127203" duration="827000" />
+      <workItem from="1562721681057" duration="5211000" />
     </task>
     <task id="LOCAL-00001" summary="Ubuntu_git">
       <created>1561173330272</created>
@@ -620,39 +621,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ServiceTest - 2019.07.04 at 14h 02m 39s.xml">
+    <history-entry file="ServiceTest_test18 - 2019.07.10 at 10h 27m 54s.xml">
+      <configuration name="ServiceTest.test18" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceTest_test18 - 2019.07.10 at 10h 29m 51s.xml">
+      <configuration name="ServiceTest.test18" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceTest_test18 - 2019.07.10 at 10h 30m 04s.xml">
+      <configuration name="ServiceTest.test18" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceTest_test19 - 2019.07.10 at 10h 47m 46s.xml">
+      <configuration name="ServiceTest.test19" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceTest_test19 - 2019.07.10 at 10h 50m 02s.xml">
+      <configuration name="ServiceTest.test19" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceTest_test19 - 2019.07.10 at 10h 50m 34s.xml">
+      <configuration name="ServiceTest.test19" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceTest_test19 - 2019.07.10 at 10h 51m 10s.xml">
+      <configuration name="ServiceTest.test19" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceTest - 2019.07.10 at 10h 54m 16s.xml">
       <configuration name="ServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceTest - 2019.07.04 at 15h 21m 47s.xml">
+    <history-entry file="ServiceTest - 2019.07.10 at 10h 55m 21s.xml">
       <configuration name="ServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServiceTest - 2019.07.04 at 15h 24m 15s.xml">
-      <configuration name="ServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest - 2019.07.04 at 15h 24m 37s.xml">
-      <configuration name="ServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest - 2019.07.06 at 00h 08m 30s.xml">
-      <configuration name="ServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest - 2019.07.07 at 09h 45m 58s.xml">
-      <configuration name="ServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest - 2019.07.07 at 09h 48m 26s.xml">
-      <configuration name="ServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest - 2019.07.07 at 09h 49m 38s.xml">
-      <configuration name="ServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest - 2019.07.07 at 09h 51m 19s.xml">
-      <configuration name="ServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServiceTest - 2019.07.07 at 09h 51m 37s.xml">
-      <configuration name="ServiceTest" configurationId="JUnit" />
+    <history-entry file="ServiceTest_test19 - 2019.07.10 at 10h 56m 22s.xml">
+      <configuration name="ServiceTest.test19" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94699000" />
+    <option name="totallyTimeSpent" value="108976000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -664,10 +665,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
+    <frame x="0" y="69" width="1920" height="1052" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19391026" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19604701" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -677,8 +678,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.057651993" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893162" weight="0.20842333" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.17062636" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49839744" weight="0.475162" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.17062636" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
@@ -686,7 +687,7 @@
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.78179383" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50106835" side_tool="true" weight="0.78941685" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5016026" side_tool="true" weight="0.475162" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49946582" weight="0.3261339" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
@@ -723,9 +724,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Ubuntu_git_SSMTest_0669UpDate1_0705" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/lib/mybatis-3.5.0.jar!/org/apache/ibatis/builder/xml/mybatis-3-config.dtd">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/mybatis-3.5.0.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -828,13 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/mapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="77">
@@ -895,10 +886,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_211/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="189" column="6" lean-forward="true" selection-start-line="189" selection-start-column="6" selection-end-line="189" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/MyBatis/service/ServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="195" column="25" lean-forward="true" selection-start-line="195" selection-start-column="25" selection-end-line="195" selection-end-column="25" />
+        <state relative-caret-position="823">
+          <caret line="248" column="9" selection-start-line="248" selection-start-column="9" selection-end-line="248" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -907,15 +912,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hls/beans/TestMyBatis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="330">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hls/dao/Idao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="57" />
+        <state relative-caret-position="578">
+          <caret line="34" column="66" lean-forward="true" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -924,8 +929,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resource/mapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="92" column="45" lean-forward="true" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
+        <state relative-caret-position="772">
+          <caret line="169" column="23" lean-forward="true" selection-start-line="169" selection-start-column="23" selection-end-line="169" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -940,6 +945,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -970,6 +976,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

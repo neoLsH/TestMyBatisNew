@@ -27,6 +27,11 @@ public interface Idao {
     List<TestMyBatis> selectMemberByNameAndTimeDate(Map map);
     List<TestMyBatis> selectMemberByNameSecSexAndTimeDate(Map map); //String name,String sec,String sex,String TimeDate
 
-    List<TestMyBatis> selectMemberByNameAndSecIf(String name,String sec);
+    List<TestMyBatis> selectMemberByNameAndSecIf(TestMyBatis testMyBatis);
+    List<TestMyBatis> selectMemberByNameAndSexWhere(TestMyBatis testMyBatis);
+    List<TestMyBatis> selectMemberByNameAndSecChoose(TestMyBatis testMyBatis);
+
+    List<TestMyBatis> selectMemberByNameAndSexForeach(int[] id);
+    List<TestMyBatis> selectMemberByNameAndSexForeach2(List<Integer> list);
 
 }
