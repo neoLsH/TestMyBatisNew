@@ -249,5 +249,25 @@ public class ServiceTest {
             temp.GetALL();
         }
     }
+
+    @Test
+    public void test21(){
+        TestMyBatis testMyBatis = new TestMyBatis();
+        testMyBatis.setId(34);
+        TestMyBatis testMyBatis1 = new TestMyBatis();
+        testMyBatis1.setId(2);
+        TestMyBatis testMyBatis2 = new TestMyBatis();
+        testMyBatis.setId(23);
+        List<TestMyBatis> list = new ArrayList<>();
+        list.add(0,testMyBatis);
+        list.add(1,testMyBatis1);
+        list.add(2,testMyBatis2);
+        System.out.println(list.size());
+        List<TestMyBatis> list1 = idao.selectMemberByNameAndSexForeach3(list);
+        for (TestMyBatis temp :
+                list1) {
+            temp.GetALL();
+        }
+    }
 }
 

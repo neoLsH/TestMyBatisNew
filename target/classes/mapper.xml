@@ -171,4 +171,15 @@
             </foreach>
         </if>
     </select>
+
+    <select id="selectMemberByNameAndSexForeach3" resultType="TestMyBatis">
+        select *
+        from info
+        <if test="list.size > 0">
+            where id in
+            <foreach collection="list" item="testMyBatis" open="(" close=")" separator=",">
+                #{testMyBatis.id}
+            </foreach>
+        </if>
+    </select>
 </mapper>
