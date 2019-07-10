@@ -33,5 +33,6 @@ public interface Idao {
 
     List<TestMyBatis> selectMemberByNameAndSexForeach(int[] id);
     List<TestMyBatis> selectMemberByNameAndSexForeach2(List<Integer> list);
+    List<TestMyBatis> selectMemberByNameAndSexForeach3(List list);
 
 }
