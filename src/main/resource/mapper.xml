@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.hls.dao.ICountryDao">
+<mapper namespace="com.hls.dao.IMinisterDao">
+    <!--ICountry
+一对多
+        <select id="selectMinisterByCountry" resultType="Minister">
+            select mid,mname from minister where countryId= #{ooo}
+        </select>
+        <resultMap id="countryMapper" type="Country">
+            <id column="cid" property="cid"/>
+            <result column="cname" property="cname"/>
+            <collection property="ministers"
+                        ofType="Minister"
+                        select="selectMinisterByCountry"
+                        column="cid">
+                <id column="mid" property="mid"/>
+                <result column="mname" property="mname"/>
+            </collection>
+        </resultMap>
 
-    <select id="selectMinisterByCountry" resultType="Minister">
-        select mid,mname from minister where countryId= #{ooo}
+        单表查询
+        <select id="selectCountryById" resultMap="countryMapper">
+        select cid,cname from country where cid=#{xxx}
     </select>
-    <resultMap id="countryMapper" type="Country">
-        <id column="cid" property="cid"/>
-        <result column="cname" property="cname"/>
-        <collection property="ministers"
-                    ofType="Minister"
-                    select="selectMinisterByCountry"
-                    column="cid">
-            <id column="mid" property="mid"/>
-            <result column="mname" property="mname"/>
-        </collection>
-    </resultMap>
+
+        -->
 
     <!--多表连接查询 不能使用延迟加载-->
 
@@ -28,10 +36,45 @@
     </select>-->
 
 
-    <!--可使用延迟加载-->
 
-    <select id="selectCountryById" resultMap="countryMapper">
-        select cid,cname from country where cid=#{xxx}
+
+
+
+    <!--多对一-->
+
+    <!--可使用延迟加载-->
+    <select id="selectCountryById" resultType="Country1">
+        select cid,cname from country where cid=#{ooo}
     </select>
+
+    <resultMap id="MinisterMapper" type="Minister">
+        <id column="mid" property="mid"/>
+        <result column="mname" property="mname"/>
+        <!--     多表查询
+        <association property="country1" javaType="Country1">
+            <id column="cid" property="cid1"/>
+            <result column="cname" property="cname1"/>
+        </association>-->
+        <!--单表查询-->
+        <association property="country1"
+                     javaType="Country1"
+                     select="selectCountryById"
+                     column="countryid"/>
+    </resultMap>
+
+    <select id="selectMinisterById" resultMap="MinisterMapper">
+        select mid,mname,countryid from minister where mid =#{xxx}
+    </select>
+
+    <!--
+      多对一  多表查询
+    <select id="selectMinisterById" resultMap="MinisterMapper">
+        select mid,mname,cid,cname
+        from minister,country
+        where countryid=cid and mid =#{xxx}
+    </select>-->
+
+
+
 
 </mapper>
