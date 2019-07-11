@@ -9,6 +9,12 @@ public class Minister {
         this.mname = mname;
     }
 
+    public void Getinfo(){
+        System.out.println(this.mid+"\t\t\t\t\t\t\t");
+        System.out.println(this.mname+"\n");
+
+    }
+
     public Integer getMid() {
         return mid;
     }
@@ -23,5 +29,10 @@ public class Minister {
 
     public void setMname(String mname) {
         this.mname = mname;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

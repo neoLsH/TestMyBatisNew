@@ -1,191 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.hls.dao.Idao">
-    <insert id="InsertMember">
-        insert into info (name, sec, sex, TimeDate) values (#{name},#{sec},#{sex},#{TimeDate})
-    </insert>
-    <!--/*有关order：
-            After（生成id在insert后面）  Mysql   是先执行INSERT    然后再生成Id
-            Before Oracle  是先生成Id 再执行INSERT
-            现在不写也行，默认根据用的数据库选择
-        */-->
-    <insert id="InsertMemberCache" >
-        insert into info (name, sec, sex, TimeDate) values (#{name},#{sec},#{sex},#{TimeDate})
-        <selectKey resultType="int" keyProperty="id" order="AFTER">
-            select @@identity ;
-        </selectKey>
-    </insert>
+<mapper namespace="com.hls.dao.ICountryDao">
 
-    <delete id="DeleteMemberByid">
-        delete from info where id=#{xxx}
-    </delete>
-
-    <update id="UpdateMember">
-        update info set name=#{name},sec=#{sec} ,sex=#{sex}, TimeDate=#{TimeDate} where id=#{id}
-    </update>
-
-    <select id="selectAllMember" resultType="TestMyBatis">
-        select id,name,sec,sex,TimeDate from info
+    <select id="selectMinisterByCountry" resultType="Minister">
+        select mid,mname from minister where countryId= #{ooo}
     </select>
-
-    <select id="selectAllMemberMap" resultType="TestMyBatis">
-        select id,name,sec,sex,TimeDate from info
-    </select>
-
-    <select id="selectMemberByid" resultType="TestMyBatis">
-        select id,name,sec,sex,TimeDate from info where id like concat('%',#{id},'%')
-    </select>
-
-    <select id="selectMemberBySec" resultType="TestMyBatis">
-        select id,name,sec,sex,TimeDate from info where sec like concat('%',#{sec},'%')
-    </select>
-
-    <select id="selectMemberBySex" resultType="TestMyBatis">
-        select id,name,sec,sex,TimeDate from info where sex like concat('%',#{sex},'%')
-    </select>
-
-    <select id="selectMemberByDate" resultType="TestMyBatis">
-        select id,name,sec,sex,TimeDate from info where TimeDate like concat('%',#{TimaDate},'%')
-    </select>
-    <!--resultMap-->
-
-    <select id="selectMemberByNameAndSec" resultType="TestMyBatis">
-        select id,name,sec,sex,TimeDate
-        from info
-        where name like '%' #{arg0} '%'
-        and sec like concat('%',#{arg1},'%')
-    </select>
-
-
-    <!--#{KeyName}   -->
-    <select id="selectMemberByNameAndSecMap" resultType="TestMyBatis">
-        select id,name,sec,sex,TimeDate
-        from info
-        where NAME like '%' #{name1} '%'
-        and sec like '%' #{sec1} '%'
-        and TimeDate like '%' #{testMyBatis.TimeDate} '%'
-    </select>
-
-    <!--动态sql-->
-
-    <select id="selectMemberByNameAndSex" resultType="TestMyBatis">
-        select *
-        from info
-        where name like '%' #{name2} '%'
-        and sex like '%' #{testMyBatis.sex} '%'
-    </select>
-
-    <select id="selectMemberByNameAndTimeDate" resultType="TestMyBatis">
-        select *
-        from info
-        where name like '%' #{name3} '%'
-        and TimeDate like concat('%',#{testMyBatis.TimeDate},'%')
-    </select>
-
-    <resultMap id="test1" type="TestMyBatis">
-        <id column="name1" property="name"/>
-        <id column="sec1" property="sec"/>
+    <resultMap id="countryMapper" type="Country">
+        <id column="cid" property="cid"/>
+        <result column="cname" property="cname"/>
+        <collection property="ministers"
+                    ofType="Minister"
+                    select="selectMinisterByCountry"
+                    column="cid">
+            <id column="mid" property="mid"/>
+            <result column="mname" property="mname"/>
+        </collection>
     </resultMap>
 
-    <!--用的时候直接用resultMap  id 就可以了-->
-    <select id="selectMemberByNameSecSexAndTimeDate" resultType="TestMyBatis">
-        select *
-        from info
-        where name like '%' #{name} '%'
-        and sec like '%' #{sec} '%'
-        and sex like '%' #{sex} '%'
-        and TimeDate like '%' #{TimeDate} '%'
-    </select>
-
-    <select id="selectMemberByNameAndSecIf" resultType="TestMyBatis">
-        select *
-        from info
-        where 1 = 1
-        <if test="name != null and name != '  '">
-            and name like '%' #{name} '%'
-        </if>
-        <if test="sec != null and sec != '  '">
-            and sec like '%' #{sec} '%'
-        </if>
-        <if test="sex != null and sex != '  '">
-            and sex like '%' #{sex} '%'
-        </if>
-    </select>
-<!--动态sql的时候一般加   and-->
-    <select id="selectMemberByNameAndSexWhere" resultType="TestMyBatis">
-        select *
-        from info
-        <where>
-            <if test="name != null and name !='  '">
-                and name like '%' #{name} '%'
-            </if>
-            <if test="sex != null and sex != '  '">
-                and sex like '%' #{sex} '%'
-            </if>
-        </where>
-    </select>
-
-    <select id="selectMemberByNameAndSecChoose" resultType="TestMyBatis">
-        select *
-        from info
-        <where>
-            <choose>
-                <when test="name != null and name!=''">
-                    and name like  '%' #{name} '%'
-                </when>
-                <when test="sex != null and sex !=''">
-                    and sex like '%' #{sex} '%'
-                </when>
-                <otherwise>
-                    1 = 2
-                </otherwise>
-            </choose>
-        </where>
-    </select>
-
-    <!--
-         select *
-         from info
-         where id in (1,3,5)
-    -->
+    <!--多表连接查询 不能使用延迟加载-->
 
 
-    <select id="selectMemberByNameAndSexForeach" resultType="TestMyBatis">
-         select *
-         from info
-         <if test="array.length > 0">
-             where id in
-             <foreach collection="array" item="myId" open="(" close=")" separator=",">
-                #{myId}
-             </foreach>
-         </if>
-     </select>
+    <!--<select id="selectCountryById" resultMap="countryMapper">
+    select cid,cname,mid,mname
+    from country,minister
+    where countryid=cid and cid = #{xxx}
+    </select>-->
 
-    <select id="selectMemberByNameAndSexForeach2" resultType="TestMyBatis">
-        select *
-        from info
-        <if test="list.size > 0">
-            where id in
-            <foreach collection="list" item="myId" open="(" close=")" separator=",">
-                #{myId}
-            </foreach>
-        </if>
-    </select>
 
-    <sql id="selectSomething">
-        id,name,sec,sex,TimeDate
-    </sql>
+    <!--可使用延迟加载-->
 
-    <select id="selectMemberByNameAndSexForeach3" resultType="TestMyBatis">
-        select <include refid="selectSomething"/>
-        from info
-        <if test="list.size > 0">
-            where id in
-            <foreach collection="list" item="testMyBatis" open="(" close=")" separator=",">
-                #{testMyBatis.id}
-            </foreach>
-        </if>
+    <select id="selectCountryById" resultMap="countryMapper">
+        select cid,cname from country where cid=#{xxx}
     </select>
 
 </mapper>
