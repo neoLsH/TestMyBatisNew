@@ -8,8 +8,6 @@ public class Minister {
 
     private Country1 country1;
 
-
-
     public void Getinfo(){
         System.out.println(this.mid+"\t\t\t\t\t\t\t");
         System.out.println(this.mname+"\n");
